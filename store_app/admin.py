@@ -1,3 +1,5 @@
 from django.contrib import admin
+from store_app.models import Baraa,Angilal
 
-# Register your models here.
+admin.site.register(Baraa)
+admin.site.register(Angilal)
