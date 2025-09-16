@@ -6,12 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>нүүр хуудас</h1>
-     {% if name %}
-        <p>Нэр: {{ name }}</p>
-    {% else %}
-        <p>Нэр олдсонгүй.</p>
-    {% endif %}
-    
+    <h1>Бараанууд</h1>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>Нэмэх</button>
 </body>
 </html>
