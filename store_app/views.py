@@ -1,7 +1,9 @@
 from django.shortcuts import render
+from .models import Baraa, Angilal
 
 
 def show_baraa_form(request):
+    
     return render(request, "baraa.html")
 
 
